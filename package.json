@@ -1,0 +1,36 @@
+{
+  "name": "markdown-preview",
+  "version": "1.0.0",
+  "description": "markdown preview",
+  "main": "webpack.config.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "copy": "copyfiles -f ./src/index.html  ./dist",
+    "dist": "npm run clean & npm run copy & webpack --env=dist",
+    "dev": "npm run clean & npm run copy & webpack-dev-server --hot --inline"
+  },
+  "author": "zhangyx",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "copyfiles": "^1.0.0",
+    "css-loader": "^0.26.1",
+    "node-sass": "^3.13.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-hot-loader": "^1.3.1",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "marked": "^0.3.6"
+  }
+}

@@ -1,0 +1,32 @@
+.content {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    .content-header{
+      padding: 8px;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      background-color: #381F0B;
+      h2 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 200;
+      }
+    }
+    .content-table{
+      width: 100%;
+      color: #333;
+      font-size: 18px;
+      background: #fff;
+    }
+    .userImg {
+      img{
+        width: 40px;
+        max-height: 40px;
+        border: 2px solid #381F0B;
+        border-radius: 2px;
+        margin-right: 4px
+      }
+    }
+}
