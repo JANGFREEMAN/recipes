@@ -1,0 +1,54 @@
+<div className = 'container'>
+  <div className = 'well'>
+    <Accordion>
+    <Panel header="Collapsible Group Item #1" eventKey="1" bsStyle="success">
+      <h4 className="text-center">Ingredients</h4><hr/>
+      <ListGroup >
+        <ListGroupItem>Item 1</ListGroupItem>
+        <ListGroupItem>Item 2</ListGroupItem>
+        <ListGroupItem>&hellip;</ListGroupItem>
+      </ListGroup>
+      <ButtonToolbar>
+        <Button bsStyle="danger" >编辑</Button>
+        <Button >删除</Button>
+      </ButtonToolbar>
+    </Panel>
+    <Panel header="Collapsible Group Item #1" eventKey="2" bsStyle="success">
+        <ListGroup >
+          <ListGroupItem>Item 1</ListGroupItem>
+          <ListGroupItem>Item 2</ListGroupItem>
+          <ListGroupItem>&hellip;</ListGroupItem>
+        </ListGroup>
+        <ButtonToolbar>
+          <Button bsStyle="danger" >编辑</Button>
+          <Button >删除</Button>
+        </ButtonToolbar>
+    </Panel>
+    </Accordion>
+  </div>
+  <Button  bsStyle="primary" >添加项目</Button>
+  <Modal show={true} onHide={this.close}>
+    <Modal.Header closeButton>
+      <Modal.Title>添加食谱</Modal.Title>
+    </Modal.Header>
+    <Modal.Body>
+    <form>
+      <FormGroup>
+        <ControlLabel>食谱</ControlLabel>
+        <FormControl
+          type="text"
+          placeholder = '红烧肉'
+        />
+      </FormGroup>
+      <FormGroup >
+        <ControlLabel>配料</ControlLabel>
+        <FormControl componentClass="textarea" placeholder="菜,米,油,盐" />
+      </FormGroup>
+    </form>
+    </Modal.Body>
+    <Modal.Footer>
+      <Button bsStyle = 'primary'>确定</Button>
+      <Button >取消</Button>
+    </Modal.Footer>
+  </Modal>
+</div>

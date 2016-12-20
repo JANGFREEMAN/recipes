@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class='container well'>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Collapsible Group Item #1
+              </a>
+            </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <h4 class="text-center" data-reactid=".1.0.$0/=10.1.$0.0.0">Ingredients</h4>
+                        <hr/>
+                        <ul class="list-group" data-reactid=".1.0.$0/=10.1.$0.0.2">
+                            <li class="list-group-item" data-reactid=".1.0.$0/=10.1.$0.0.2.$0//=10/=1$0/=010">Pumpkin Puree</li>
+                        </ul>
+                        <div role="toolbar" class="btn-toolbar" data-reactid=".1.0.$0/=10.1.$0.0.3"><button id="btn-del0" type="button" class="btn btn-danger" data-reactid=".1.0.$0/=10.1.$0.0.3.0">Delete</button><button id="btn-edit0" type="button" class="btn btn-default" data-reactid=".1.0.$0/=10.1.$0.0.3.1">Edit</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='button'>
+            <button type="button" class="btn btn-primary btn-lg" data-target=".bs-example-modal-sm" data-toggle="modal">添加项目</button>
+        </div>
+    </div>
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" style = 'z-index:1050'>
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                       <label for="exampleInputEmail1">Email address</label>
+                       <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                     </div>
+                     <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <textarea  class="form-control" id="exampleInputEmail1" placeholder="Enter email"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
