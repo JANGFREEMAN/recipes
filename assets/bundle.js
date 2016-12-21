@@ -21583,22 +21583,23 @@
 	          document.getElementById('editor').text = '编辑菜单';
 	          document.getElementById('recipe').value = this.state.recipes[i].title;
 	          document.getElementById('ingredient').value = this.state.recipes[i].Ingredients;
-	        }.bind(this), 1000);
+	        }.bind(this), 1);
 	      } else {
 	        setTimeout(function () {
 	          document.getElementById('editor').onclick = this.update();
-	        }.bind(this), 1000);
+	        }.bind(this), 1);
 	      }
 	    }.bind(this);
 	  },
 	  update: function update(i) {
 	    return function () {
-	      debugger;
 	      var title = document.getElementById('recipe').value,
 	          ingredient = document.getElementById('ingredient').value;
 	      if (i >= 0) {
 	        //编辑
 	        if (title.length <= 0) {
+	          //关闭弹框
+	          this.close();
 	          return;
 	        }
 	        this.state.recipes[i].title = title;
