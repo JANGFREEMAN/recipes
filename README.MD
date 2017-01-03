@@ -1,3 +1,4 @@
+[TOC]
 # 前言
 这用ReactJs和BootStrap实现的一个菜谱页面，实现菜单的菜单名和配料。多个配料需要用英文符号```,```来分割。数据会用Html5的localStorage来本地存储。
 
