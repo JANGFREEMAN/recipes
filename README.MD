@@ -8,7 +8,7 @@ https://jangfreeman.github.io/recipes
 ## 安装教程
 1. npm install
 2. npm run start
-3. visit [https://jangfreeman.github.io/recipes/index.html](https://jangfreeman.github.io/recipes/index.html)
+3. visit [localhost:8080](https://jangfreeman.github.io/recipes/index.html)
 
 
 ## 存在bug
